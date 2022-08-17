@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int i,f,a[]={0,1};
+    printf("fibonacci series:\n");
+    printf("%d\n%d\n",a[0],a[1]);
+    for(i=1;i<100;i++)
+    {
+        f=a[0]+a[1];
+        if(f>100)
+        break;
+        else
+        printf("%d\n",f);
+        a[0]=a[1];
+        a[1]=f;
+    }
+    return 0;
+}
